@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #c1d1e8;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.lGM8To1p4vE1cvj0xIYdMgHaFD&pid=Api&P=0&h=180);
+    background-size: cover;  
+    background-repeat: no-repeat;
+    margin-top: 8%;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.588);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8d8d8d;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #66b0fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #34c4f5;
+}
+
+button:active {
+    background-color: #098f8f;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regist Page</h1>
+        <form action="register.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me 
+                </label>
+            </div>
+            <a href="3.html" class="login"><button type="submit" onclick="myFunction()">Sign In</button></a>
+        </form>
+        <script>
+            function myFunction() {
+            alert("You Have Logged Succesfully!");
+            }
+    </script>
+    </div>
+</body>
+</html>
