@@ -3,36 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue Page</title>
+    <title>Catalog Page</title>
     <style>
-        .left{
-            display: flex;
-            margin-top: 5%;
+        table {
+            width: 50%;
+            border-collapse: collapse;
         }
-        .right{
-            display:flex;
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 7px;
+            background-color:#f2f2f2;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        body{
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.lGM8To1p4vE1cvj0xIYdMgHaFD&pid=Api&P=0&h=180);
+background-size: cover;  
+            background-size: cover;  
+
+        }
+        h1{
+            color:white;
         }
     </style>
 </head>
 <body>
-    <h1>Catalogue Page</h1><br>
-    <div class="right">
-    <img src="https://tse2.mm.bing.net/th?id=OIP.QvqrcGZ4TzHe7iGgBj5bQAHaIU&pid=Api&P=0&h=180" alt=""><br>
-    <h4>Atomic Habits</h4>
-    <p>Prize: Rs.450</p><br>
+    <h1>Catalog Page</h1>
 
-    <img src="https://tse2.mm.bing.net/th?id=OIP.0tMEAT72uMeO-qfaV8NbVAHaLX&pid=Api&P=0&h=180" alt=""><br>
-    <h4>Percy Jackson</h4>
-    <p>Prize: Rs.550</p>
-    </div>
-    <div class="left">
-        <img src="https://tse3.mm.bing.net/th?id=OIP.FuTdz70mKsz6-55UMKNaNgHaLL&pid=Api&P=0&h=180" alt=""><br>
-        <h4>Think Like A Monk</h4>
-        <p>Prize: Rs.350</p><br>
-        <img src="https://tse1.mm.bing.net/th?id=OIP.DjdePWLF62YDf-Bb6sPFjgHaIb&pid=Api&P=0&h=180" alt=""><br>
-        <h4>Rich Dad Poor Dad</h4>
-        <p>Prize: Rs.540</p>
-    </div>
-    
+<table>
+    <tr>
+        <th>Book Image</th>
+        <th>Book Name</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td><img src="https://tse2.mm.bing.net/th?id=OIP.QvqrcGZ4TzHe7iGgBj5bQAHaIU&pid=Api&P=0&h=180" alt="Book 1"></td>
+        <td>Atomic Habits</td>
+        <td>Rs. 450</td>
+    </tr>
+    <tr>
+        <td><img src="https://tse2.mm.bing.net/th?id=OIP.0tMEAT72uMeO-qfaV8NbVAHaLX&pid=Api&P=0&h=180" alt="Book 2"></td>
+        <td>Percy Jackson and The Lightning Thief</td>
+        <td>Rs. 550</td>
+    </tr>
+    <tr>
+        <td> <img src="https://tse3.mm.bing.net/th?id=OIP.FuTdz70mKsz6-55UMKNaNgHaLL&pid=Api&P=0&h=180" alt="Book 3"></td>
+        <td>Think Like A Monk</td>
+        <td>Rs. 350</td>
+    </tr>
+    <tr>
+        <td><img src="https://tse1.mm.bing.net/th?id=OIP.DjdePWLF62YDf-Bb6sPFjgHaIb&pid=Api&P=0&h=180" alt=""></td>
+        <td>Rich Dad Poor Dad</td>
+        <td>Rs. 600</td>
+    </tr>
+</table>
+
 </body>
 </html>
